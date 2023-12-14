@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+#main {
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  background-color: #262626;
+  overflow: auto;
+}
+
+#header {
+  width: 100%;
+  height: 60px;
+  background-color: #363636;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#logo {
+  margin-top: 10px;
+  padding: 20px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;  
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+  
+}
+
+#span-keep {
+  color: #FBBC04;
+}
+
+#button-exit {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: #26262615;
+  margin-right: 10px;
+}
+
+#button-exit:hover {
+  cursor: pointer;
+}
+
+#container-add-note-card {
+  padding: 10px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  background: #3636369a;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
+  align-items: center;
+  justify-content: center;
+}
+
+#container-add-note-card:hover {
+  transform: scale(1.010);
+  cursor: pointer;
+}
+
+#title-add-note-card {
+  margin: 0;
+  color: #ffffff62;
+  font-family: 'Roboto', sans-serif;  
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.container-notes-grid {
+  width: 90%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  grid-template-rows: repeat(auto-fill, 100px);
+  justify-content: center;
+  gap: 20px;
+}
+
+#button-add-note {
+  position: fixed;
+  z-index: 100;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: #FBBC04;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  display: none;
+  margin-top: 79vh;
+  margin-left: 70vw;
+}
+
+#plus-icon {
+  transition: transform 0.2s ease-in-out;
+}
+
+#button-add-note:hover {
+  transform: scale(1.04);
+}
+
+@media (max-width: 450px) {
+  #container-add-note-card {
+    display: none;
+  }
+  #button-add-note {
+    display: flex;
+  }
+}

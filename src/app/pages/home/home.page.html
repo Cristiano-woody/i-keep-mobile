@@ -1,0 +1,19 @@
+<header id="header">
+  <h2 id="logo">I<span id="span-keep">Keep</span></h2>
+  <button id="button-exit" (click)="logOut()">
+    <ion-icon style="font-size: 1.5em;" name="exit-outline"></ion-icon>
+  </button>
+</header>
+<main id="main">
+  <div class="container-notes-grid">
+      <div id="container-add-note-card" (click)="togglePopUpCreateNote()">
+          <h3 id="title-add-note-card">Adicionar Nota</h3>
+          <ion-icon name="add"></ion-icon>
+      </div>
+      <app-note-card *ngFor="let note of (notes$ | async)" (deleteNoteOut)="deleteNote($event)" (updateNoteOut)="updateNote($event)" [noteTitle]="note.title" [noteDescription]="note.description" [noteId]="note.id"></app-note-card>
+  </div>
+  <app-note-popup *ngIf="popUpCreateNoteIsOpen" [buttonExcluirIsVIsible]= false (updateNoteOut)="saveNote($event)" (closePopupOut)="togglePopUpCreateNote()"></app-note-popup>
+  <div id="button-add-note" (click)="togglePopUpCreateNote()">
+    <ion-icon name="add" style="font-size: 3em; color: #262626;"></ion-icon>
+  </div>
+</main>

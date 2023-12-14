@@ -12,10 +12,9 @@ import { StoreModule } from '@ngrx/store';
 import { appReducer } from './store/app.state';
 import { EffectsModule } from '@ngrx/effects';
 import { AppEffectsService } from './store/app-effects.service';
-import { NotePopupComponent } from './components/note-popup/note-popup.component';
 
 @NgModule({
-  declarations: [AppComponent, NotePopupComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule, 
     IonicModule.forRoot(), 
