@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+#main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #262626;
+}
+
+#container {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: transparent;
+  padding: 55px;
+}
+
+#title-login {
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;  
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#span-keep {
+  color: #FBBC04;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px
+}
+
+.input-form {
+  width: 280px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  background: rgba(255, 255, 255, 0.05);
+  margin-top: 5px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+}
+.input-form:focus {
+  border: 1px solid #FBBC04;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.input-form-error {
+  width: 280px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(255, 127, 127);
+  background: rgba(255, 255, 255, 0.05);
+  margin-top: 5px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+}
+.input-form-error:focus {
+  border: 1px solid #FBBC04;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+#button-submit {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  background: #FBBC04;
+  margin-top: 5px;
+  color: #262626;
+  font-family: 'Roboto', sans-serif;  
+  font-size: 20px;
+  font-weight: 700;
+}
+#button-submit:hover {
+  cursor: pointer;
+}
+
+#spran-redirect-login {
+  color: #FFF;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;  
+}
+
+#link-redirect-login {
+  color: #FBBC04;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;  
+}
+
+#invalid-credentials-span {
+  color: rgb(255, 127, 127);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+#container-input-password {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.error-email {
+  border: 1px solid rgb(255, 127, 127);
+}

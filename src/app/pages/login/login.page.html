@@ -1,0 +1,27 @@
+<ion-content id="main">
+  <div id="container">
+    <h2 id="title-login"> Entre no I <span id="span-keep">Keep</span></h2>
+    <div id="form">
+      <ion-input [(ngModel)]="formLogin.email" [counter]="true" fill="solid" labelPlacement="floating" label="Email"
+        maxlength="40" placeholder="22555888" type="text"></ion-input>
+      <span id="container-input-password">
+        <ion-input [(ngModel)]="formLogin.password" [counter]="true" fill="solid" labelPlacement="floating"
+          label="Senha" maxlength="40" placeholder="22555888" type="text"></ion-input>
+        <span id="invalid-credentials-span" *ngIf="requiredInput">
+          O email e senha são obrigatórios.
+        </span>
+        <span id="invalid-credentials-span" *ngIf="invalidCredentials">
+          Credenciais invalidas.
+        </span>
+      </span>
+      <button expand="block" fill="solid" id="button-submit" (click)="login()">
+        Entrar
+      </button>
+      <span id="spran-redirect-login">
+        Não tem uma conta?
+        <a routerLink="/register" routerLinkActive="active" ariaCurrentWhenActive="page"
+          id="link-redirect-login">Registre-se</a>
+      </span>
+    </div>
+  </div>
+</ion-content>
