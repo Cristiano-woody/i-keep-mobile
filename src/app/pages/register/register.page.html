@@ -1,13 +1,25 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>register</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">register</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+<main id="main">
+  <div id="container">
+    <h2 id="title-login"> Crie uma nova conta</h2>
+    <div id="form">
+      <ion-input [(ngModel)]="formRegister.name" [counter]="true" fill="solid" labelPlacement="floating" label="Nome"
+      maxlength="40" type="text"></ion-input>
+      <ion-input [(ngModel)]="formRegister.email" [counter]="true" fill="solid" labelPlacement="floating" label="Email"
+      maxlength="40" type="text"></ion-input>
+      <span id="container-input-password">
+        <ion-input [(ngModel)]="formRegister.password" [counter]="true" fill="solid" labelPlacement="floating" label="Senha"
+        maxlength="40" type="text"></ion-input>
+        <span id="span-required-error" *ngIf="requiredInputsError">Os campos de cadastro são obrigatórios.</span>
+        <span id="span-required-error" *ngIf="InvalidEmailSpanError">Email não é válido.</span>
+        <span id="span-required-error" *ngIf="InvalidPasswordSpanError">A senha deve ter mais de 5 caracteres.</span>
+      </span>
+      <button expand="block" fill="solid" id="button-submit" (click)="register()">
+        Registre-se
+      </button>
+      <span id="spran-redirect-login"> 
+        Já tem uma conta?
+        <a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page" id="link-redirect-login">Faça login.</a>
+      </span>
+    </div>
+  </div>
+</main>

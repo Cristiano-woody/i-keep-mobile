@@ -37,6 +37,10 @@ export class LoginPage implements OnInit {
       (result: { authToken: string; userId: string }) => {
         window.localStorage.setItem('authToken', `Bearer ${result.authToken}`);
         window.localStorage.setItem('userId', result.userId);
+        this.formLogin = {
+          email: '',
+          password: ''
+        }
         this.router.navigate(['']);
       },
       (error: any) => {
