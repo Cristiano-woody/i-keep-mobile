@@ -3,6 +3,8 @@
 ## Descrição
 O **I Keep** é um aplicativo desenvolvido com Ionic, inspirado no Google Keep. Ele oferece uma plataforma simples e eficiente para fazer anotações rápidas, listas de tarefas, e organização de ideias. Com uma interface intuitiva e design limpo, o **I Keep** é projetado para facilitar a gestão de informações importantes em seu dia a dia.
 
+![frames](https://github.com/Cristiano-woody/i-keep-mobile/assets/112226018/229103f6-2b55-4c16-8dc5-410175ab444e)
+
 ## Instalação
 
 1. Certifique-se de que o Node.js na versao 20.10 esteja instalado em seu computador.
