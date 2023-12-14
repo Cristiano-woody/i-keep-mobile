@@ -5,7 +5,7 @@ O **I Keep** é um aplicativo desenvolvido com Ionic, inspirado no Google Keep. 
 
 ## Instalação
 
-1. Certifique-se de que o Node.js esteja instalado em seu computador.
+1. Certifique-se de que o Node.js na versao 20.10 esteja instalado em seu computador.
    
 2. Clone o projeto BackEnd do **IKeep** e siga suas instruções de instalação:
   [**IKeep** BackEnd](https://github.com/Cristiano-woody/i-keep-api)
