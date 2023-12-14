@@ -1,3 +1,19 @@
-<p>
-  note-popup works!
-</p>
+<div id="container">
+  <div id="pop-up">
+    <div id="close-popup-container">
+      <button id="close-popup-button" (click)="close()">
+        <p>X</p>
+      </button>
+    </div>
+    <form (ngSubmit)="update()" id="form" [formGroup]="popUpForm" #formDir="ngForm">
+      <input type="text" id="input-title" placeholder="Título da nota" autocomplete="off" formControlName="title"
+        required>
+      <textarea id="note-description" rows="5" cols="50" placeholder="Descrição da nota" autocomplete="off"
+        formControlName="description" required></textarea>
+      <div id="container-buttons">
+        <button *ngIf="buttonExcluirIsVIsible" (click)="delete()" type="button" class="buttons">Excluir</button>
+        <button type="submit" class="buttons">Salvar</button>
+      </div>
+    </form>
+  </div>
+</div>
